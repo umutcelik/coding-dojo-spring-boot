@@ -1,5 +1,11 @@
 package com.assignment.spring;
 
+/**
+ * Don't use constants from this class, inject from application.propeties.
+ * @deprecated
+ * @see src/main/resources/application.propeties
+ */
+@Deprecated
 public class Constants {
 
     public static final String APP_ID = "TBD";

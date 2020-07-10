@@ -20,3 +20,20 @@ Please send an email containing your solution with a link to a public repository
 
 ### Footnote
 It's possible to generate the API key going to the [OpenWeather Sign up](https://openweathermap.org/appid) page.
+
+### Runnig project
+
+**Configure postgres database before running the project** 
+
+Check `src/main/resource/application.properties` file update properties
+
+`spring.datasource.url`
+`spring.datasource.username`
+`spring.datasource.password`
+
+for your database configuration.
+Integration tests run with embedded database, no configuration required 
+
+Type `mvn spring-boot:run` to run the project.
+
+Swagger UI is configured to test click `http://localhost:8080/swagger-ui.html` after running the project to get Swagger UI
